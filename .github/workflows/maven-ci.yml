@@ -45,8 +45,7 @@ jobs:
         name: Jacoco coverage results
         path: target/site/jacoco
 
-        - name: Cache build
-
+    - name: Cache build
       uses: actions/cache@v3
       with:
         key: cached-build-${{github.sha}}
